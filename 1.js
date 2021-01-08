@@ -7,7 +7,7 @@
  	 })
  	
  	$(".lh").click(function(){
- 	  	$('body,html').animate({scrollTop:$('#lienhe').offset().top},700);
+ 	  	$('body,html').animate({scrollTop:$('#lienhe').offset().top},550);
  	  	return false ; 
  	  
  	 })
