@@ -1,173 +1,348 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-	<title> Nguyễn Đăng Phú </title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">  
-	<script type="text/javascript" src="vendor/bootstrap.js"></script>
- 	<script type="text/javascript" src="1.js"></script>
-	<link rel="stylesheet" href="vendor/bootstrap.css">
-	<link rel="stylesheet" href="vendor/font-awesome.css">
- 	<link rel="stylesheet" href="1.css">
-<meta property="fb:app_id" content="668018136714370"/>
- <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-175510720-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<html lang="en">
 
-  gtag('config', 'UA-175510720-1');
-</script>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="icon" href="assets/img/logo.png">
+    <!-- =====BOX ICONS===== -->
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <title>Nguyễn Đăng Phú</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 </head>
- <body > 
- <script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '668018136714370',
-      xfbml      : true,
-      version    : 'v2.8'
-    });
-    FB.AppEvents.logPageView();
-  };
 
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script>
+<body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div></div>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link active">Trang chủ</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">Giới thiệu</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">Kỹ năng</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#experience" class="nav__link">Học vấn và Kinh nghiệm</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#work" class="nav__link">Dự án</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Liên hệ</a>
+                    </li>
+                </ul>
+            </div>
 
-<div class="menutop">
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="bx bx-menu"></i>
+            </div>
+        </nav>
+    </header>
 
-	<nav class="navbar navbar-light bg-faded navbar-fixed-top">
-	<div class="container">
-		<a class="navbar-brand" href="#"> <img src="images/logo.png" alt="Logo vietnd"></a>
-		<ul class="nav navbar-nav float-xs-right">
-			<li class="nav-item active">
-				<a class="nav-link" href="">Giới thiệu <span class="sr-only">(current)</span></a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link kn" href="#"  >Kinh nghiệm</a>
-			</li>
-			
-			<li class="nav-item">
-				<a class="nav-link lh" href="#">Thông tin liên hệ</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link cm" href="#">Comment</a>
-			</li>
-		</ul>
-	  </div>
-	</nav>
+    <main class="l-main">
+        <!--===== HOME =====-->
+        <section class="home bd-grid" id="home">
+            <div class="home__data">
+                <h1 class="home__title">
+                    Xin chào, <br />Mình là <span class="home__title-color">Nguyễn Đăng Phú</span>
+                    <div>Mình là <span class="typing"></span></div>
+                </h1>
+                <a href="#contact" class="button">Liên hệ</a>
+            </div>
 
- </div> <!-- het menu  -->
+            <div class="home__social">
+                <a href="https://www.facebook.com/dangphu.hero/" class="home__social-icon" alt="Facebook"
+                    target="_blank" title="Facebook Đăng Phú"><i class="fa fa-facebook-official"
+                        aria-hidden="true"></i></a>
+                <a href="mailto:ndphu2804@gmail.com" class="home__social-icon" alt="Gmail" target="_blank"
+                    title="Gmail"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                <a href="https://github.com/nguyendangphuhero" class="home__social-icon" alt="Github" target="_blank"
+                    title="Github"><i class="fa fa-github" aria-hidden="true"></i></a>
+                
+            </div>
 
- 	<div class="khoitt1">
- 
-	 	<div class="container text-xs-center">
+            <div class="home__img">
+                <img src="assets/img/mywork.svg" alt="" />
+            </div>
+        </section>
 
-		 	<div class="tt">
-		 		<img src="images/avatar.png" alt="" >
-		 		<h2>Nguyễn Đăng Phú</h2>
-		 		<p>Hãy đến bên tôi. Tôi sẽ trao cho bạn những giá trị !!!</p>
-		 		<a href="" class="nuthire btn btn-primary"> Hợp tác </a>
-		 	</div>
-	 		
-			<div class="xuong"></div>
-	 	</div>
-    </div>   <!-- HET PHAN KHOTT -->
-  	
- </div>
+        <!--===== ABOUT =====-->
+        <section class="about section" id="about">
+            <h2 class="section-title">Giới thiệu</h2>
 
- <div class="edu" id="khoiedu">
- 	<div class="container">
- 		<div class="row">
- 			<div class="col-sm-12 tieudeto text-xs-center">
- 				<h1>Kinh nghiệm & Quá trình học</h1>
- 			</div>
- 			<div class="col-sm-4 cot1_3">
- 				<h2 class="tieudecap2  text-sm-right text-xs-center"> <span class="dam">  Quá trình học</span>  </h2>
- 				<div class="khoittnho text-sm-right text-xs-center">
- 					<p>Học mẫu giáo xóm Thượng</p>
- 					<p>Trường tiểu học Ưu Điềm</p>
- 					<p>Trường THCS Phong Hòa
- 					 </p>
- 					 <p>Trường THPT Trần Văn Kỷ</p>
- 				</div>
-				
-				<div class="khoittnho text-sm-right text-xs-center">
- 					<h3 class="tieudecap3">2017-2020  Học DHBK</h3>
- 					<span class="motaqt"> Đại Học Bách Khoa Đà Nẵng  </span>
- 					<p>Thích học hỏi</p>
- 					<p>Chăm nghiên cứu mày mò</p>
- 					
- 				</div>
-				
- 			</div> <!-- het cot 4/1 -->
-			<div class="col-sm-4 cot2_3">
-				<img src="images/3.png" alt="" class="img-fluid">
-			</div>
-			<div class="col-sm-4 cot3_3">
- 				<h2 class="tieudecap2  text-sm-left text-xs-center">  <span class="dam">Quá trình làm việc</span>  </h2>
- 				<div class="khoittnho text-sm-left text-xs-center">
- 					<h3 class="tieudecap3"> Các phần mềm đã làm</h3>
- 					
- 					<p>Website bán hàng </p>
- 					<p>App android phiên dịch Tiếng Anh </p>
- 					<p>Phần mềm quản lí nhân viên </p>
- 					<p>Nhận diện khuôn mặt để phát hiện buồn ngủ </p>
- 				</div>
-				<div class="khoittnho text-sm-left text-xs-center">
- 					<h3 class="tieudecap3"> Làm thiết kế web</h3>
- 					<p>Đam mê thiết kế những giao diện đẹp</p>
- 					<p></p>
- 				</div>
-			
-				
- 			</div> <!-- het cot 4/1 -->
- 		</div>
- 	</div>	
- </div>  	<!-- end edu  -->
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <img src="assets/img/mywork.svg" alt="" />
+                </div>
+
+                <div>
+                    <h2 class="about__subtitle">Mình là Nguyễn Đăng Phú</h2>
+                    <p class="about__text">
+                        Mình sinh 1999. Quê quán: Huế. Hiện đang là học sinh tại trường Đại học Bách khoa Đà Nẵng. Là 1 học sinh luôn đam mê công nghệ. Thích tìm tòi học học
+                        tạo ra những ứng dụng hữu ích cho xã hội. Hơn hết nữa luôn muốn hoàn thiện bản thân mình để đạt được nhiều thành công trong cuộc sống.
+                    </p>
+                    <a href="https://123job.vn/cv/xem-cv/dcf49d6cd4e98bdfd6130e75d3d79c3d" class="button">Xem CV</a>
+                </div>
+            </div>
+        </section>
+
+        <!--===== SKILLS =====-->
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Kỹ năng</h2>
+
+            <div class="skills__container bd-grid">
+                <div>
+                    <h2 class="skills__subtitle">Kỹ năng yêu thích</h2>
+                    <p class="skills__text">
+                        Frontend Developer
+                    </p>
+                    <div class="skills__data_love">
+                        <div class="skills__names_love">
+                            <i class="bx bxl-html5 skills__icon"></i>
+                            <span class="skills__name">HTML5</span>
+                        </div>
+                        <div class="skills__names_love">
+                            <i class="bx bxl-css3 skills__icon"></i>
+                            <span class="skills__name">CSS3</span>
+                        </div>
+                        <div class="skills__names_love">
+                            <i class="bx bxl-javascript skills__icon"></i>
+                            <span class="skills__name">JAVASCRIPT</span>
+                        </div>
+                    </div>
+
+                    <p class="skills__text">
+                        Backend Developer
+                    </p>
+                    <div class="skills__data_love">
+          
+                        <div class="skills__names_love">
+                            <i class="iconify skills__icon" data-icon="cib:java" data-inline="false"></i>
+                            <span class="skills__name">Java-JSP/Servlet</span>
+                        </div>
+
+                        <div class="skills__names_love">
+                            <i class="iconify skills__icon" data-icon="bx:bxl-nodejs" data-inline="false"></i>
+                            <span class="skills__name">NodeJS</span>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div>
+                    <img src="assets/img/work3.jpg" alt="" class="skills__img" />
+                </div>
+                <div>
+                    <img src="assets/img/work5.jpg" alt="" class="skills__img" />
+                </div>
+                <div>
+                    <h2 class="skills__subtitle">Ngôn ngữ yêu thích</h2>
+                    <p class="skills__info">
+                        Dưới đây là nhưng ngôn ngữ mà mình hay dùng và đã từng làm việc nhiều
+                    </p>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            
+                            <i class="iconify skills__icon" data-icon="bx:bxl-nodejs" data-inline="false"></i>
+                            <span class="skills__name">Nodejs</span>
+                        </div>
+                        <div class="skills__bar skills__python"></div>
+                        <div>
+                            <span class="skills__percentage">85%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class="iconify skills__icon" data-icon="cib:java" data-inline="false"></i>
+                            <!-- <i class="bx bxl-html5 skills__icon"></i> -->
+                            <span class="skills__name">Java</span>
+                        </div>
+                        <div class="skills__bar skills__java"></div>
+                        <div>
+                            <span class="skills__percentage">70%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class="bx bxl-html5 skills__icon"></i>
+                            <span class="skills__name">HTML5</span>
+                        </div>
+                        <div class="skills__bar skills__html"></div>
+                        <div>
+                            <span class="skills__percentage">75%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class="bx bxl-css3 skills__icon"></i>
+                            <span class="skills__name">CSS3</span>
+                        </div>
+                        <div class="skills__bar skills__css"></div>
+                        <div>
+                            <span class="skills__percentage">75%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class="bx bxl-javascript skills__icon"></i>
+                            <span class="skills__name">JAVASCRIPT</span>
+                        </div>
+                        <div class="skills__bar skills__js"></div>
+                        <div>
+                            <span class="skills__percentage">75%</span>
+                        </div>
+                    </div>
+                </div>
 
 
+            </div>
+        </section>
+        <!-- Experience & Education Starts -->
+        <section class="experience-section" id="experience">
+            <h2 class="section-title">Học vấn <span>&</span> Kinh nghiệm</h2>
+            <div class="experience__container bd-grid">
+                <div class="resume-box">
+                    <ul>
+                        <li class="experience__data_left">
+                            <div class="icon">
+                                <i class="fa fa-graduation-cap"></i>
+                            </div>
+                            <span class="time open-sans-font text-uppercase">8/2017 - Hiện tại</span>
+                            <h5 class="poppins-font text-uppercase">
+                                Trường Đại Học Bách Khoa Đà Nẵng
+                                <br />
+                                <span class="place open-sans-font">Sinh viên</span>
+                            </h5>
+                            <p class="open-sans-font">
+                                Là sinh viên khóa 17 khoa Công Nghệ Thông Tin tại trường Đại Học Bách Khoa - Đại Học Đà
+                                Nẵng
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+        </section>
+        <!-- Experience & Education Ends -->
 
-<<div class="lienhe" id="lienhe">
-	<div class="container text-xs-center">	
-		<div class="row">
-			<div class="col-sm-12">
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<h2>Liên hệ </h2>		
-			</div>
-			<div class="col-sm-8 push-sm-2">
-				<p><b>Email:</b> <i>Nguyendangphu1234567890@gmail.com</i></p>
-				<p><b>Số điện thoại:</b><i> 0974098756</i></p>
-			</div>
-		</div>
-		
-	</div>
-</div>
+        <!--===== WORK =====-->
+        <section class="work section" id="work">
+            <h2 class="section-title">Dự án</h2>
 
-<div class="phanhoi" id="phanhoi">
-	<div class="container text-xs-center">	
-		<div class="row">
-			<div class="col-sm-12">
-				<br>
-				<h2>Phản hồi </h2>		
-			</div>
-			<div class="col-sm-8 push-sm-2">
-				<div class="fb-comments" data-href="https://nguyendangphuhero.github.io/" data-numposts="5"></div>
-			</div>
-		</div>
-		
-	</div>
-</div>
- </body>
+            <div class="work__container bd-grid">
+                <div class="work_info">
+                    <div class="img-container">
+                        <div class="work_details">
+                            <p>Cửa hàng điện thoại và máy tính bảng online</p>
+                        </div>
+                        <img src="assets/img/dienThoai.png" alt="work skills" />
+                        <h5 class="work_title">Cửa hàng điện thoại và máy tính bảng</h5>
+                        <h6>Đây là đồ án môn học. Được viết theo Nodejs. </h6>
+                        <a href="https://github.com/nguyendangphuhero/thucTapcongDan" target="_blank"
+                            class="btn-primary btn-right">Xem source</a>
+                    </div>
+                </div>
+                <div class="work_info">
+                    <div class="img-container">
+                        <div class="work_details">
+                            <p>Nhận diện khuôn mặt</p>
+                        </div>
+                        <img src="assets/img/nhanDienKhuonMat.png" alt="work skills" />
+                        <h5 class="work_title">Nhận diện khuôn mặt</h5>
+                        <h6>Đồ án môn Vi điều khiển. Được viết theo ngôn ngữ Python . </h6>
+                        <a href="https://github.com/nguyendangphuhero/NhanDienKhuonMat" target="_blank"
+                            class="btn-primary btn-right">Xem source</a>
+                    </div>
+                </div>
+                
+                <div class="work_info">
+                    <div class="img-container">
+                        <div class="work_details">
+                            <p>App nhật ký</p>
+                        </div>
+                        <img src="assets/img/nhatKy.jpg" alt="work skills" />
+                        <h5 class="work_title">App nhật ký</h5>
+                        <h6>Đây là bài tập lớn môn công nghệ di động. Tạo một app bằng android studio</h6>
+                        <a href="https://github.com/nguyendangphuhero/DangPhuDiary" target="_blank"
+                            class="btn-primary btn-right">Xem source</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--===== CONTACT =====-->
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Liên hệ</h2>
+            <p class="about__text">
+                Bạn có thể liên hệ mình qua nhưng cách bên dưới.
+            </p>
+            <div class="contacts__social">
+                <a href="https://www.facebook.com/dangphu.hero/" class="contacts__icon" alt="Facebook"
+                    target="_blank" title="Facebook Đăng Phú"><i class="fa fa-facebook-official"
+                        aria-hidden="true"></i></a>
+                <a href="mailto:ndphu2804@gmail.com" class="contacts__icon" alt="Gmail" target="_blank"
+                    title="Gmail"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                <a href="https://github.com/nguyendangphuhero" class="contacts__icon" alt="Github" target="_blank"
+                    title="Github"><i class="fa fa-github" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/dangphucenter/" class="contacts__icon" alt="Instagram" target="_blank"
+                    title="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+        <p class="footer__title">Cám ơn bạn đã ghé thăm trang web cá nhân của mình !! </p>
+        <p class="footer__title">
+            <a href="https://github.com/lemanh99" target="_blank" title="https://github.com/nguyendangphuhero">Truy cập trang
+                github của mình </a>
+        </p>
+        <p>&#169; 2021 Bản quyền thuộc về <a href="https://youtu.be/AKNvTxWOdKw" class="footer-youtube"
+                target="_blank">Kênh Bedimcode</a> </p>
+    </footer>
+    <div class="scroll-up-btn">
+        <i class="iconify" data-icon="fa:angle-up" data-inline="false"></i>
+    </div>
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v9.0'
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Your Chat Plugin code -->
+    <div class="fb-customerchat" attribution=setup_tool page_id="dangphu.hero">
+    </div>
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js"></script>
+</body>
+
 </html>
-
